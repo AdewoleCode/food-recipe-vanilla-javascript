@@ -1,7 +1,6 @@
 const searchForm = document.querySelector('form');
 const searchResultDiv = document.querySelector('.search-result');
 const container = document.querySelector('.container');
-// const input = document.querySelector('input').value;
 let searchQuery = '';
 const APP_key = 'b8da70a648c8dee61e9eaa4669bd072c';
 const APP_Id = 'd910b847';
@@ -45,7 +44,6 @@ function renderResult(results){
                 <p class="item-data"> Calories: ${result.recipe.calories.toFixed(2)}</p>
                 <p class="item-data"> Diet Label: ${result.recipe.dietLabels.length > 0 ? result.recipe.dietLabels : "no data found"}</p>
                 <p class="item-data">Health Label: ${result.recipe.healthLabels}</p>
-
         </div>
         `
     })
